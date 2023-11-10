@@ -60,18 +60,19 @@
                                             <div class="valid-feedback">Looks good!</div>
                                         </div>
 
-                                        <div class="form-group mb-3 row">
-                                            <label for="validationCustom02" class="col-xl-3 col-sm-4 mb-0">Type</label>
-                                            <input class="form-control col-xl-8 col-sm-7" id="validationCustom02" type="hidden" required="" name="user_id" value="{{Auth::User()->id}}">
-                                            <select class="form-control digits col-xl-8 col-sm-7" id="exampleFormControlSelect1" name="transaction_type">
+                                        
+
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="service_status">Select Type</label>
+                                            <div class="col-md-4">
+                                             <input class="form-control col-xl-8 col-sm-7" id="validationCustom02" type="hidden" required="" name="user_id" value="{{Auth::User()->id}}">
+                                              <select id="service_status" name="transaction_type" class="form-control">
                                                 <option value="deposit">Deposit</option>
                                                 <option value="withdrawal">withdraw</option>
-                                                {{-- <option>Large</option>
-                                                <option>Extra Large</option> --}}
-                                            </select>
-                                            <input class="form-control col-xl-8 col-sm-7" id="validationCustom02" type="hidden" required="" name="transaction_type" value="deposit">
-                                            <div class="valid-feedback">Looks good!</div>
-                                        </div>
+                                                {{-- <option value="Completed">Completed</option> --}}
+                                              </select>
+                                            </div>
+                                          </div>
 
                                         <div class="form-group row">
                                             <label class="col-xl-3 col-sm-4"> Description :</label>

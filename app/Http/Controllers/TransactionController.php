@@ -18,6 +18,7 @@ class TransactionController extends Controller
 
     public function store(Request $request)
     {
+        // dd($request->all());
         // Check if the user is authenticated
         if (auth()->check()) {
             // Validate the request data

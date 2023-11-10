@@ -145,22 +145,11 @@
                         <div class="single-item">
                             <div>
                                 <div>
-                                    <h3>Welcome to Bigdeal</h3>
+                                    <h3>Welcome to Banking System</h3>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                                 </div>
                             </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -223,15 +212,7 @@
                                         <div class="form-button">
                                             <button class="btn btn-primary" type="submit">Register</button>
                                         </div>
-                                        <div class="form-footer">
-                                            <span>Or Sign up with social platforms</span>
-                                            <ul class="social">
-                                                <li><a class="icon-facebook" href=""></a></li>
-                                                <li><a class="icon-twitter" href=""></a></li>
-                                                <li><a class="icon-instagram" href=""></a></li>
-                                                <li><a class="icon-pinterest" href=""></a></li>
-                                            </ul>
-                                        </div>
+
                                     </form>
                                 </div>
 
