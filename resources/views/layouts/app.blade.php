@@ -153,32 +153,19 @@
                 </div>
                 <ul class="sidebar-menu">
                     <li><a class="sidebar-header" href="index.html"><i data-feather="home"></i><span>Dashboard</span></a></li>
-                    <li><a class="sidebar-header" href="#"><i data-feather="box"></i> <span>Transaction</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li>
-                                <a href="#"><i class="fa fa-circle"></i>
-                                    <span>See All Transaction</span> <i class=" "></i>
-                                </a>
 
-                    </li>
-                </li>
-
-
-
-
-                </ul>
                 <ul>
-                <li><a class="sidebar-header" href="#"><i data-feather="box"></i> <span>Deposit</span><i class="fa fa-angle-right pull-right"></i></a>
+                <li><a class="sidebar-header" href="#"><i data-feather="box"></i> <span>Transaction</span><i class="fa fa-angle-right pull-right"></i></a>
                     <ul class="sidebar-submenu">
                         <li>
-                            <a href="#"><i class="fa fa-circle"></i>
-                                <span>Deposit</span> <i class=" "></i>
+                            <a href="{{route('transaction.index')}}"><i class="fa fa-circle"></i>
+                                <span>View Transaction</span> <i class=" "></i>
                             </a>
 
                         </li>
                         <li>
                             <a href="{{route('make.deposit')}}"><i class="fa fa-circle"></i>
-                                <span>Make Deposit</span> <i class=" "></i>
+                                <span>Make Transaction</span> <i class=" "></i>
                             </a>
 
                         </li>
@@ -187,24 +174,7 @@
         </ul>
 
 
-        <ul>
-            <li><a class="sidebar-header" href="#"><i data-feather="box"></i> <span>Withdraw</span><i class="fa fa-angle-right pull-right"></i></a>
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="#"><i class="fa fa-circle"></i>
-                            <span>Withdraw</span> <i class=" "></i>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-circle"></i>
-                            <span>Make Withdraw</span> <i class=" "></i>
-                        </a>
-
-                    </li>
-                </ul>
-        </li>
-    </ul>
+        
 
 
             </div>

@@ -42,4 +42,27 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getTotalWithdrawalAttribute()
+    {
+        // Sum the 'amount' column for withdrawal transactions
+        return $this->transactions()->where('transaction_type', 'withdrawal')->sum('amount');
+    }
+
+    /**
+     * Method to update the total withdrawal amount for the user.
+     */
+    public function updateTotalWithdrawal($amount)
+    {
+        $this->total_withdrawal += $amount;
+        $this->save();
+    }
+
+    /**
+     * Define a relationship to the transactions for the user.
+     */
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class, 'user_id');
+    }
 }

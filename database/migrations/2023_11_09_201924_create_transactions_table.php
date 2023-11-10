@@ -22,6 +22,8 @@ return new class extends Migration
                         $table->double('amount');
                         $table->string('description');
                         $table->date('date');
+                        $table->decimal('total_withdrawal', 10, 2)->default(0.00);
+                        $table->string('fee')->nullable();
                         $table->timestamps();
 
                         $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

@@ -209,6 +209,16 @@
                                                 <label class="custom-control-label" for="customControlAutosizing1"><span>I agree all statements in <a href=""  class="pull-right">Terms &amp; Conditions</a></span></label>
                                             </div>
                                         </div>
+                                        <div class="col-md-6 mb-4">
+                                            Account Type
+                                            <select class="select" name="account_type">
+                                              <option value="1" disabled>Account Type</option>
+                                              <option value="individual">individual</option>
+                                              <option value="business">business</option>
+
+                                            </select>
+
+                                          </div>
                                         <div class="form-button">
                                             <button class="btn btn-primary" type="submit">Register</button>
                                         </div>

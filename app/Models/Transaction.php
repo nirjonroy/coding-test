@@ -8,12 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Transaction extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'amount',  // Add this line
-        'date',
-        'user_id',
-        'transaction_type',
-        'description',
-        // Add other fields as needed
-    ];
+    protected $fillable = ['user_id', 'transaction_type', 'amount', 'description', 'fee', 'date'];
+
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
