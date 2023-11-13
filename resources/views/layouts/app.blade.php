@@ -10,6 +10,9 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <title>Bigdeal - Premium Admin Template</title>
 
     <!-- Google font-->
@@ -174,7 +177,7 @@
         </ul>
 
 
-        
+
 
 
             </div>
@@ -257,6 +260,7 @@
         <!-- Right sidebar Ends-->
 
         @yield('content')
+        @include('sweetalert::alert')
 
         <!-- footer start-->
         <footer class="footer">

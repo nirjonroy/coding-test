@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\Transaction;
 use App\Models\User;
 use Auth;
+// Use Alert;
+
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class TransactionController extends Controller
 {
@@ -91,10 +95,13 @@ class TransactionController extends Controller
                 'fee' => isset($withdrawalFee) ? $withdrawalFee : null,
                 'date' => $validatedData['date'],
             ]);
+            Alert::success('Success Title', 'Success Message');
 
             return redirect()->route('transaction.index')->with('success', 'Transaction added successfully');
         } else {
             // User is not authenticated, handle accordingly
+            Alert::error('Error Title', 'Error Message');
+
             return redirect()->route('login')->with('error', 'Please login to make a transaction.');
         }
     }
